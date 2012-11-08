@@ -1,0 +1,17 @@
+{
+  "name": "rnpm",
+  "description": "Recursive NPM",
+  "tags": [
+    "npm",
+    "package manager"
+  ],
+  "version": "0.0.1",
+  "dependencies": {
+    "commander": "~1.0.5",
+    "dive": "~0.2.0",
+    "npm": "~1.1.65"
+  },
+  "bin": {
+    "rnpm": "./bin/rnpm"
+  }
+}

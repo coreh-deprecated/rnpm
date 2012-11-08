@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var app = require('commander')
+  , fs = require('fs')
+  , rnpm = require('../lib');
+
+app
+  .version(JSON.parse(fs.readFileSync('package.json', 'utf-8')).version);
+
+app
+  .command('install')
+  .description('Recursively install dependencies')
+  .action(function() {
+    rnpm.install()
+  });
+
+app
+  .parse(process.argv);
