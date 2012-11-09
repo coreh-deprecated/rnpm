@@ -1,5 +1,6 @@
 {
   "name": "rnpm",
+  "author": "Marco Aurélio",
   "description": "Recursive NPM",
   "tags": [
     "npm",
