@@ -24,4 +24,6 @@ app
 app
   .parse(process.argv);
 
-app.help()
+if (process.argv.length == 2) {
+  app.help()
+}
