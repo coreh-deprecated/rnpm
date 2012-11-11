@@ -15,4 +15,13 @@ app
   });
 
 app
+  .command('analyze')
+  .description('Analyze dependencies recursively and warn about any inconsistencies')
+  .action(function() {
+    rnpm.analyze()
+  });
+
+app
   .parse(process.argv);
+
+app.help()
