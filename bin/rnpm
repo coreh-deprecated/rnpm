@@ -2,10 +2,11 @@
 
 var app = require('commander')
   , fs = require('fs')
-  , rnpm = require('../lib');
+  , rnpm = require('../lib')
+  , path = require('path');
 
 app
-  .version(JSON.parse(fs.readFileSync('package.json', 'utf-8')).version);
+  .version(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf-8')).version);
 
 app
   .command('install')
