@@ -9,17 +9,20 @@ app
   .version(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf-8')).version);
 
 app
+  .option('--production', 'Ignore `devDependencies`.')
+
+app
   .command('install')
   .description('Recursively install dependencies')
   .action(function() {
-    rnpm.install()
+    rnpm.install({ production: app.production })
   });
 
 app
   .command('analyze')
   .description('Analyze dependencies recursively and warn about any inconsistencies')
   .action(function() {
-    rnpm.analyze()
+    rnpm.analyze({ production: app.production })
   });
 
 app
