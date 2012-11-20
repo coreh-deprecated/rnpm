@@ -10,12 +10,13 @@ app
 
 app
   .option('--production', 'Ignore `devDependencies`.')
+  .option('--strict', 'Fail on inconsistent dependencies.')
 
 app
   .command('install')
   .description('Recursively install dependencies')
   .action(function() {
-    rnpm.install({ production: app.production })
+    rnpm.install({ production: app.production, strict: app.strict })
   });
 
 app
