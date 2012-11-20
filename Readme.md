@@ -53,3 +53,13 @@ If different versions of the same lib are listed in two or more `package.json` f
 ## `rnpm analyze`
 
 When you run `rnpm analyze`, RNPM will check for conflicting dependency versions and warn you about them, without installing anything.
+
+## `rnpm update-dep`
+
+The `update-dep` command allows you to recursively update a dependency version across multiple `package.json` files. It accepts the following syntax:
+
+    $ rnpm update-dep <dependency> <version>
+
+## `rnpm normalize`
+
+The `normalize` command will check for conflicting dependency versions, and prompt you for the correct version on each inconsistency found. It's equivalent to calling `rnpm analyze` and then `rnpm update-dep` manually (but much faster).
