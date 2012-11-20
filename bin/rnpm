@@ -26,6 +26,13 @@ app
   });
 
 app
+  .command('update-dep <dependency> <version>')
+  .description('Update a dependency version recursively')
+  .action(function(dep, version) {
+    rnpm.updateDep({ dependency: dep, version: version });
+  });
+
+app
   .parse(process.argv);
 
 if (process.argv.length == 2) {
