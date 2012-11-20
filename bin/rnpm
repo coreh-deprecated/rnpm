@@ -33,6 +33,15 @@ app
   });
 
 app
+  .command('normalize')
+  .description('Normalize dependencies recursively')
+  .action(function() {
+    rnpm.normalize({}, function() {
+      process.exit(0);
+    })
+  });
+
+app
   .parse(process.argv);
 
 if (process.argv.length == 2) {
