@@ -1,4 +1,9 @@
 
+0.2.1 / 2012-11-21
+==================
+
+  * Create missing symlink even if `.rnpm` already exists.
+
 0.2.0 / 2012-11-21
 ==================
 
