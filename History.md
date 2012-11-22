@@ -1,4 +1,10 @@
 
+0.2.0 / 2012-11-21
+==================
+
+  * Use a consistent logging format.
+  * Switch to new install strategy.
+
 0.1.1 / 2012-11-20
 ==================
 
