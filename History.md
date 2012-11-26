@@ -1,4 +1,9 @@
 
+0.2.3 / 2012-11-26
+==================
+
+  * Properly store `devDependencies` on `.rnpm/package.json`.
+
 0.2.2 / 2012-11-22
 ==================
 
