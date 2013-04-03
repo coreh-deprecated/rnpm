@@ -10,7 +10,7 @@
   "dependencies": {
     "commander": "~1.1.1",
     "dive": "~0.3.0",
-    "npm": "~1.1.70",
+    "npm": "~1.2.16",
     "ansi": "0.1.2"
   },
   "bin": {
