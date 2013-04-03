@@ -1,4 +1,9 @@
 
+0.2.7 / 2013-04-03
+==================
+
+  * Revert change that broke compability with node 0.8.x
+
 0.2.6 / 2013-04-02
 ==================
 
