@@ -1,4 +1,17 @@
 
+0.3.0 / 2013-04-03
+==================
+
+  **This release is the same as 0.2.6. From this point onwards:**
+
+  0.3.x releases will be compatible only with node 0.10.x
+  0.2.x releases will be compatible only with node 0.8.x
+
+0.2.7 / 2013-04-03
+==================
+
+  * Revert change that broke compability with node 0.8.x
+
 0.2.6 / 2013-04-02
 ==================
 
