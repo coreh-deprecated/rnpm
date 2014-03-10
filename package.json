@@ -4,13 +4,14 @@
   "description": "Recursive NPM",
   "tags": [
     "npm",
+    "recursive",
     "package manager"
   ],
   "version": "0.3.0",
   "dependencies": {
     "commander": "~1.1.1",
     "dive": "~0.3.0",
-    "npm": "~1.2.16",
+    "npm": "~1.4.4",
     "ansi": "0.1.2"
   },
   "bin": {
